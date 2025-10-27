@@ -17,5 +17,5 @@ ENV PORT=8080
 
 # Replace ports in config.xml at runtime (optional safety net)
 # This replaces any 10080 or 10081 with the actual PORT value
-CMD sed -i "s/10080/${PORT}/g; s/10081/${PORT}/g" config/config.xml && \
+CMD sed -i "s/\${PORT}/$PORT/g" config/config.xml config/config.properties && \
     java -cp "lib/*:config" org.openas2.app.OpenAS2Server config/config.xml

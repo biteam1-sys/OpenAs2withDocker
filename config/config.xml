@@ -39,7 +39,7 @@
                module.AS2ReceiverModule.http.enabled="true"
                module.AS2ReceiverModule.http.port="${PORT}"
                module.AS2MDNReceiverModule.http.enabled="true"
-               module.AS2MDNReceiverModule.http.port="${PORT}"
+               module.AS2MDNReceiverModule.http.port="8081"
                module.AS2ReceiverModule.https.enabled="false"
                module.AS2ReceiverModule.https.port="8383"
                module.AS2MDNReceiverModule.https.enabled="false"
