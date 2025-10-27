@@ -1,0 +1,24 @@
+Headers:
+Date: Tue, 14 Oct 2025 22:43:44 +0530
+From: suja.gopinath@tnpconsultants.com
+Message-ID: <20251014224344+0530-350-NewSender_ID_AntrPrtnr_ID_null>
+Subject: File null sent from NewSender to AnotherPartner
+Mime-Version: 1.0
+Content-Type: multipart/report; report-type=disposition-notification; 	boundary="----=_Part_10_920744317.1760462024876"
+AS2-To: NewSender_ID
+AS2-From: AntrPrtnr_ID
+AS2-Version: 1.1
+Connection: close, TE
+User-Agent: OpenAS2 Server v4.6.3
+Server: OpenAS2 Server v4.6.3
+Content-Length: 1138
+
+Attributes:
+FINAL_RECIPIENT: rfc822; AntrPrtnr_ID
+MIC: null
+REPORTING_UA: OpenAS2 Server v4.6.3@/127.0.0.1:10080
+ORIGINAL_MESSAGE_ID: <20251014224344+0530-363-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>
+ORIGINAL_RECIPIENT: rfc822; AntrPrtnr_ID
+DISPOSITION: automatic-action/MDN-sent-automatically; processed
+Text:
+The message sent to Recipient AntrPrtnr_ID on Tue, 14 Oct 2025 22:43:44 +0530 with Subject File TestFile_2.edi sent from NewSender to AnotherPartner has been received, the EDI Interchange was successfully decrypted and it's integrity was verified. In addition, the sender of the message, Sender NewSender_ID at Location /127.0.0.1 was authenticated as the originator of the message. There is no guarantee however that the EDI Interchange was syntactically correct, or was received by the EDI application/translator.

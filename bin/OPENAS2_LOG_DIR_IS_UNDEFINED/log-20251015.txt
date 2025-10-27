@@ -1,0 +1,107 @@
+14:01:18.875 [main] INFO  org.openas2.app.OpenAS2Server -- Retrieving config file...
+14:01:19.323 [main] INFO  org.openas2.app.OpenAS2Server -- Using MANIFEST file:/C:/OpenAS2Server-4.6.3/lib/openas2-server-4.6.3.jar!/META-INF/MANIFEST.MF
+14:01:19.387 [main] INFO  org.openas2.XMLSession -- Loading configuration...
+14:01:19.387 [main] INFO  org.openas2.XMLSession -- Loading properties...
+14:01:21.067 [main] INFO  org.openas2.util.XMLUtil -- Component node ignored as it is not enabled: {identifier=ssl_trust_certs, password=testas2, filename=C:\OpenAS2Server-4.6.3\config/ssl_trust_certs.p12, classname=org.openas2.cert.PKCS12CertificateFactory, interval=300, enabled=false}
+14:01:21.114 [main] INFO  org.openas2.XMLSession -- Loading command processor(s)...
+14:01:21.114 [main] INFO  org.openas2.XMLSession -- Command processor is disabled ... ignoring: org.openas2.cmd.processor.StreamCommandProcessor
+14:01:21.114 [main] INFO  org.openas2.XMLSession -- Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+14:01:21.121 [main] INFO  org.openas2.XMLSession -- Loading processor nodes...
+14:01:21.213 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="$properties.module.AS2ReceiverModule.https.port$" protocol="https" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$" ssl_protocol="TLS"/>
+14:01:21.220 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="$properties.module.AS2MDNReceiverModule.https.port$" protocol="https" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$" ssl_protocol="TLS"/>
+14:01:21.230 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module address="$properties.module.HealthCheckModule.address$" classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="$properties.module.HealthCheckModule.port$" protocol="$properties.module.HealthCheckModule.protocol" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$"/>
+14:01:21.234 [main] INFO  org.openas2.XMLSession -- Loading partnerships...
+14:01:21.383 [main] INFO  org.openas2.util.IOUtil -- Created directory C:\OpenAS2Server-4.6.3\config\..\data\outbox\error\2025-10-15\PartnerA_OID
+14:01:21.391 [main] INFO  org.openas2.util.IOUtil -- Created directory C:\OpenAS2Server-4.6.3\config\..\data\outbox\error\2025-10-15\PartnerB_OID
+14:01:21.398 [main] INFO  org.openas2.util.IOUtil -- Created directory C:\OpenAS2Server-4.6.3\config\..\data\outbox\error\2025-10-15\MyCompany_OID
+14:01:21.402 [main] INFO  org.openas2.util.IOUtil -- Created directory C:\OpenAS2Server-4.6.3\config\..\data\outbox\error\2025-10-15\AntrPrtnr_ID
+14:01:21.406 [main] INFO  org.openas2.XMLSession -- Loading messages...
+14:01:21.406 [main] INFO  org.openas2.util.XMLUtil -- Component node ignored as it is not enabled: {filename=C:\OpenAS2Server-4.6.3\config/messages.xml, classname=org.openas2.message.XMLMessageFactory, interval=120, enabled=false}
+14:01:21.430 [main] INFO  org.openas2.app.OpenAS2Server -- Shutdown hook registered.
+14:01:21.431 [main] INFO  org.openas2.app.OpenAS2Server -- Starting OpenAS2 Server v4.6.3...
+14:01:21.478 [main] INFO  EmbeddedDBHandler -- Using JDBC driver: org.h2.Driver
+14:01:21.927 [main] INFO  org.openas2.processor.DefaultProcessor -- DbTrackingModule started.
+14:01:21.944 [main] INFO  org.openas2.processor.DefaultProcessor -- AS2ReceiverModule started.
+14:01:21.944 [main] INFO  org.openas2.processor.DefaultProcessor -- AS2MDNReceiverModule started.
+14:01:21.947 [main] INFO  org.openas2.processor.DefaultProcessor -- DirectoryResenderModule started.
+14:01:21.947 [main] INFO  org.openas2.processor.DefaultProcessor -- 4 active module(s) started.
+14:01:21.951 [main] INFO  org.openas2.app.OpenAS2Server -- OpenAS2 Server v4.6.3 started.
+14:01:26.951 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.DirectoryPollingModule -- Processing file: C:\OpenAS2Server-4.6.3\config\..\data\outbox\AntrPrtnr_ID\TestFile_2.edi
+14:01:26.986 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.MessageBuilderModule -- Processing file for sending using AS2 - name: TestFile_2.edi  :: Size: 316
+14:01:27.575 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.MessageBuilderModule -- File assigned to message: 20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:27.578 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Message sender invoked for log ID:  [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:28.355 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Save Original mic & message id information into file: C:\OpenAS2Server-4.6.3\config/../data/pendinginfoMDN3/20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:28.805 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Connecting to: http://localhost:10080 [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.540 [pool-3-thread-1] INFO  org.openas2.processor.receiver.AS2ReceiverHandler -- received 2134 bytes in 0.21 seconds at 99.243 KBps 127.0.0.1 61501 [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.766 [pool-3-thread-1] INFO  org.openas2.processor.storage.MessageFileModule -- stored message to C:\OpenAS2Server-4.6.3\config\..\data\inbox\AntrPrtnr_ID\NewSender_ID-20251015140129-Dng5QC1pQMqkoZJywMTB5wieie.as2 [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.775 [pool-3-thread-1] INFO  org.openas2.processor.storage.MessageFileModule -- stored headers to C:\OpenAS2Server-4.6.3\config\..\data\NewSender_ID-AntrPrtnr_ID\msgheaders\2025-10-15\20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.806 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Message sent and response received in 362 milliseconds [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.809 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Partner AntrPrtnr_ID responded with MDN [automatic-action/MDN-sent-automatically; processed] [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.816 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Message sent and MDN received successfully.
+14:01:29.817 [pool-3-thread-1] INFO  org.openas2.processor.sender.MDNSenderModule -- sent MDN [automatic-action/mdn-sent-automatically; processed] [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:01:29.821 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Pending MDN MSG FILE deleted: C:\OpenAS2Server-4.6.3\config\..\data\pendingMDN3\20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015140126+0530-511-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+14:02:15.634 [Thread-0] INFO  org.openas2.processor.DefaultProcessor -- DbTrackingModule stopped.
+14:02:15.635 [Thread-0] INFO  org.openas2.processor.DefaultProcessor -- AS2ReceiverModule stopped.
+14:02:15.637 [Thread-0] INFO  org.openas2.processor.DefaultProcessor -- AS2MDNReceiverModule stopped.
+14:02:15.637 [Thread-0] INFO  org.openas2.processor.DefaultProcessor -- DirectoryResenderModule stopped.
+14:02:15.637 [Thread-0] INFO  org.openas2.processor.DefaultProcessor -- 4 active module(s) stopped.
+14:02:15.637 [Thread-0] INFO  org.openas2.app.OpenAS2Server -- OpenAS2 has shut down
+
+14:02:15.637 [HTTPServerThread (0.0.0.0:10081)] ERROR org.openas2.processor.receiver.NetModule -- Failed transferring data over HTTP connection: Socket closed
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:767)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:675)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:641)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:617)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:574)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:532)
+	at org.openas2.processor.receiver.NetModule$HTTPServerThread.run(NetModule.java:314)
+14:02:15.635 [HTTPServerThread (0.0.0.0:10080)] ERROR org.openas2.processor.receiver.NetModule -- Failed transferring data over HTTP connection: Socket closed
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endAccept(NioSocketImpl.java:694)
+	at java.base/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:767)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:675)
+	at java.base/java.net.ServerSocket.platformImplAccept(ServerSocket.java:641)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:617)
+	at java.base/java.net.ServerSocket.implAccept(ServerSocket.java:574)
+	at java.base/java.net.ServerSocket.accept(ServerSocket.java:532)
+	at org.openas2.processor.receiver.NetModule$HTTPServerThread.run(NetModule.java:314)
+15:42:41.724 [main] INFO  org.openas2.app.OpenAS2Server -- Retrieving config file...
+15:42:42.559 [main] INFO  org.openas2.app.OpenAS2Server -- Using MANIFEST file:/C:/OpenAS2Server-4.6.3/lib/openas2-server-4.6.3.jar!/META-INF/MANIFEST.MF
+15:42:42.651 [main] INFO  org.openas2.XMLSession -- Loading configuration...
+15:42:42.652 [main] INFO  org.openas2.XMLSession -- Loading properties...
+15:42:44.746 [main] INFO  org.openas2.util.XMLUtil -- Component node ignored as it is not enabled: {identifier=ssl_trust_certs, password=testas2, filename=C:\OpenAS2Server-4.6.3\config/ssl_trust_certs.p12, classname=org.openas2.cert.PKCS12CertificateFactory, interval=300, enabled=false}
+15:42:44.790 [main] INFO  org.openas2.XMLSession -- Loading command processor(s)...
+15:42:44.791 [main] INFO  org.openas2.XMLSession -- Command processor is disabled ... ignoring: org.openas2.cmd.processor.StreamCommandProcessor
+15:42:44.791 [main] INFO  org.openas2.XMLSession -- Command processor is disabled ... ignoring: org.openas2.cmd.processor.RestCommandProcessor
+15:42:44.795 [main] INFO  org.openas2.XMLSession -- Loading processor nodes...
+15:42:44.916 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2ReceiverModule" enabled="$properties.module.AS2ReceiverModule.https.enabled$" errordir="$properties.storageBaseDir$/inbox/error" errorformat="sender.as2_id, receiver.as2_id, headers.message-id" port="$properties.module.AS2ReceiverModule.https.port$" protocol="https" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$" ssl_protocol="TLS"/>
+15:42:44.925 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module classname="org.openas2.processor.receiver.AS2MDNReceiverModule" enabled="$properties.module.AS2MDNReceiverModule.https.enabled$" port="$properties.module.AS2MDNReceiverModule.https.port$" protocol="https" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$" ssl_protocol="TLS"/>
+15:42:44.943 [main] INFO  org.openas2.XMLSession -- Module is disabled ... ignoring: <module address="$properties.module.HealthCheckModule.address$" classname="org.openas2.processor.receiver.HealthCheckModule" enabled="$properties.module.HealthCheckModule.enabled$" port="$properties.module.HealthCheckModule.port$" protocol="$properties.module.HealthCheckModule.protocol" ssl_keystore="$properties.ssl_keystore$" ssl_keystore_password="$properties.ssl_keystore_password$"/>
+15:42:44.948 [main] INFO  org.openas2.XMLSession -- Loading partnerships...
+15:42:45.251 [main] INFO  org.openas2.XMLSession -- Loading messages...
+15:42:45.251 [main] INFO  org.openas2.util.XMLUtil -- Component node ignored as it is not enabled: {filename=C:\OpenAS2Server-4.6.3\config/messages.xml, classname=org.openas2.message.XMLMessageFactory, interval=120, enabled=false}
+15:42:45.291 [main] INFO  org.openas2.app.OpenAS2Server -- Shutdown hook registered.
+15:42:45.297 [main] INFO  org.openas2.app.OpenAS2Server -- Starting OpenAS2 Server v4.6.3...
+15:42:45.372 [main] INFO  EmbeddedDBHandler -- Using JDBC driver: org.h2.Driver
+15:42:45.960 [main] INFO  org.openas2.processor.DefaultProcessor -- DbTrackingModule started.
+15:42:45.985 [main] INFO  org.openas2.processor.DefaultProcessor -- AS2ReceiverModule started.
+15:42:45.989 [main] INFO  org.openas2.processor.DefaultProcessor -- AS2MDNReceiverModule started.
+15:42:45.992 [main] INFO  org.openas2.processor.DefaultProcessor -- DirectoryResenderModule started.
+15:42:45.993 [main] INFO  org.openas2.processor.DefaultProcessor -- 4 active module(s) started.
+15:42:45.996 [main] INFO  org.openas2.app.OpenAS2Server -- OpenAS2 Server v4.6.3 started.
+15:42:50.996 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.DirectoryPollingModule -- Processing file: C:\OpenAS2Server-4.6.3\config\..\data\outbox\AntrPrtnr_ID\TestFile_2.edi
+15:42:51.012 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.MessageBuilderModule -- Processing file for sending using AS2 - name: TestFile_2.edi  :: Size: 316
+15:42:52.251 [AS2DirectoryPollingModule] INFO  org.openas2.processor.receiver.MessageBuilderModule -- File assigned to message: 20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:52.254 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Message sender invoked for log ID:  [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:52.808 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Save Original mic & message id information into file: C:\OpenAS2Server-4.6.3\config/../data/pendinginfoMDN3/20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:52.986 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Connecting to: http://localhost:10080 [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:53.721 [pool-3-thread-1] INFO  org.openas2.processor.receiver.AS2ReceiverHandler -- received 2134 bytes in 0.34 seconds at 61.301 KBps 127.0.0.1 64937 [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:53.963 [pool-3-thread-1] INFO  org.openas2.processor.storage.MessageFileModule -- stored message to C:\OpenAS2Server-4.6.3\config\..\data\inbox\AntrPrtnr_ID\NewSender_ID-20251015154253-Jv2MXsQ8Q7etTflC1moXCAieie.as2 [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:53.976 [pool-3-thread-1] INFO  org.openas2.processor.storage.MessageFileModule -- stored headers to C:\OpenAS2Server-4.6.3\config\..\data\NewSender_ID-AntrPrtnr_ID\msgheaders\2025-10-15\20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:54.015 [pool-3-thread-1] INFO  org.openas2.processor.sender.MDNSenderModule -- sent MDN [automatic-action/mdn-sent-automatically; processed] [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:54.020 [AS2DirectoryPollingModule] INFO  org.openas2.processor.sender.AS2SenderModule -- Message sent and response received in 447 milliseconds [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:54.025 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Partner AntrPrtnr_ID responded with MDN [automatic-action/MDN-sent-automatically; processed] [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]
+15:42:54.042 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Message sent and MDN received successfully.
+15:42:54.051 [AS2DirectoryPollingModule] INFO  org.openas2.util.AS2Util -- Pending MDN MSG FILE deleted: C:\OpenAS2Server-4.6.3\config\..\data\pendingMDN3\20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi [<20251015154251+0530-719-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>]

@@ -1,0 +1,27 @@
+Headers:
+Content-Type: application/EDI-X12
+Content-Length: 2134
+Date: Tue, 14 Oct 2025 22:43:44 +0530
+From: suja.gopinath@tnpconsultants.com
+Message-ID: <20251014224344+0530-363-NewSender_ID_AntrPrtnr_ID_TestFile_2.edi>
+Subject: File TestFile_2.edi sent from NewSender to AnotherPartner
+Mime-Version: 1.0
+Connection: close, TE
+User-Agent: OpenAS2 Server v4.6.3 (class org.openas2.processor.sender.AS2SenderModule)
+AS2-Version: 1.1
+Recipient-Address: http://localhost:10080
+AS2-To: AntrPrtnr_ID
+AS2-From: NewSender_ID
+Disposition-Notification-To: edi@newsender.com
+Content-Disposition: Attachment; filename="TestFile_2.edi"
+Transfer-Encoding: chunked
+Host: localhost:10080
+Accept-Encoding: gzip,deflate
+
+Attributes:
+HTTP_REQUEST_TYPE: POST
+destination_ip: /127.0.0.1
+destination_port: 10080
+HTTP_REQUEST_URL: /
+source_port: 51172
+source_ip: /127.0.0.1
